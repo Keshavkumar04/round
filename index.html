@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Infinite Scrolling Images</title>
+    <title>Berkshire Hathaway</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔷</text></svg>">
     <link
       href="https://fonts.googleapis.com/css2?family=Jaini&family=Yanone+Kaffeesatz:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -17,8 +22,23 @@
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
+    <!-- =========navbar============ -->
+    <div class="navbartop">
+      <nav class="navbar">
+        <div class="logos">
+          <h2 class="headeng">Berkshire Hathway</h2>
+        </div>
+        <ul class="nav-linkss">
+          <li><a href="#viocess">Voices</a></li>
+          <li><a href="#newss">Press Release</a></li>
+          <li><a href="/inverstor.html">Investors</a></li>
+          <li><a href="/shareholder.html">Shareholder</a></li>
+          <li><a href="https://www.berkshirehathaway.com/reports.html">Annual Report</a></li>
+        </ul>
+      </nav>
+    </div>
     <div>
-      <div class="custom-shape-divider-top-1716044637">
+      <!-- <div class="custom-shape-divider-top-1716044637">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +50,8 @@
             class="shape-fill"
           ></path>
         </svg>
-      </div>
+      </div> -->
+
       <div class="heading">
         <div class="title">
           <h1 class="headingtitle">Berkshire Hathaway</h1>
@@ -60,7 +81,7 @@
 
     <div class="iconsouter">
       <div class="iconsouterheading">
-        <h2>Our top compaines</h2>
+        <h2 class="headeng">Our top compaines</h2>
       </div>
       <div class="movingicon">
         <div class="icon"><img src="unnamed.jpg" alt="Icon 1" /></div>
@@ -77,7 +98,7 @@
     <div class="worktitle">
       <div class="worktitle1">
         <p class="p">
-          Messages
+          Top voices
           <button class="button" style="vertical-align: auto">
             <span>View All </span>
           </button>
@@ -87,26 +108,30 @@
 
     <div class="work">
       <!-- ////// -->
-      <div class="outer1project">
+      <div class="outer1project" id="viocess">
         <div class="outerproject">
           <div class="projects">
             <div class="imagesection1"></div>
             <div class="projectsummary">
-              Embracing the Digital Age: Optinet's Quest for brand & digital
-              Transformation
+              <a href="https://www.berkshirehathaway.com/message.html"
+                >A Message From Warren E. Buffett</a
+              >
             </div>
           </div>
           <div class="projects">
             <div class="imagesection2"></div>
             <div class="projectsummary">
-              Transforming Intellectual Property Management through Cutting-Edge
-              Digital Innovation
+              <a href="https://www.berkshirehathaway.com/message.html"
+                >A Message From Jeff Bezos</a
+              >
             </div>
           </div>
           <div class="projects">
             <div class="imagesection4"></div>
             <div class="projectsummary">
-              Digital transformation for a leading office and interior company
+              <a href=https://www.berkshirehathaway.com/wesco/WescoHome.html
+                >A Message From Charles T
+              </a>
             </div>
           </div>
           <div class="projects">
@@ -120,44 +145,64 @@
     </div>
 
     <!-- ================ download section =============== -->
-    <section id="download-section">
-      <h2>Downloads</h2>
-      <ul id="document-list">
-        <li>
-          <span>Annual Meeting Information</span>
-          <button
-            class="download-button"
-            data-url="https://www.berkshirehathaway.com/meet01/visguide2024.pdf"
-          >
-            Download
-          </button>
-        </li>
-        <li>
-          <span>Berkshire Hathaway Energy Investor Presentation</span>
-          <button
-            class="download-button"
-            data-url="https://www.berkshirehathaway.com/bhenergy/BHE2022InvestPresent.pdf"
-          >
-            Download
-          </button>
-        </li>
-        <li>
-          <span>Sustainability</span>
-          <button
-            class="download-button"
-            data-url="https://www.berkshirehathaway.com/sustainability/berkshire2022eeo1.pdf"
-          >
-            Download
-          </button>
-        </li>
-        <!-- Add more documents as needed -->
-      </ul>
-    </section>
+    <div class="downloadsectioning">
+      <section id="download-section">
+        <h2 class="topheading">Downloads Section</h2>
+        <ul id="document-list">
+          <li>
+            <span>Annual Meeting Information</span>
+            <button
+              class="download-button"
+              data-url="https://www.berkshirehathaway.com/meet01/visguide2024.pdf"
+            >
+              Download
+            </button>
+          </li>
+          <li>
+            <span>Comman stock Information</span>
+            <button
+              class="download-button"
+              data-url="https://www.berkshirehathaway.com/brkshareholderinfo/compab.pdf"
+            >
+              Download
+            </button>
+          </li>
+          <li>
+            <span>Sustainability</span>
+            <button
+              class="download-button"
+              data-url="https://www.berkshirehathaway.com/sustainability/berkshire2022eeo1.pdf"
+            >
+              Download
+            </button>
+          </li>
+          <li>
+            <span>Facts Regarding Berkshire's 2021 Investments</span>
+            <button
+              class="download-button"
+              data-url="https://www.berkshirehathaway.com/activisionltr.pdf"
+            >
+              Download
+            </button>
+          </li>
+          <li>
+            <span>CORPORATE GOVERNANCE </span>
+            <button
+              class="download-button"
+              data-url="https://www.berkshirehathaway.com/govern/corpgov.pdf"
+            >
+              Download
+            </button>
+          </li>
+          <!-- Add more documents as needed -->
+        </ul>
+      </section>
+    </div>
     <!-- ====================== -->
 
-    <div>
+    <div class="topnews" id="newss">
       <header>
-        <h2>News Releases</h2>
+        <h2 class="topheading">News Releases</h2>
         <nav>
           <ul id="tabs">
             <li>
@@ -190,7 +235,7 @@
           </ul>
         </nav>
       </header>
-      <main>
+      <main class="newsfeed">
         <section id="news-container">
           <article class="news-item">
             <h3>
@@ -203,7 +248,7 @@
           <article class="news-item">
             <h3>
               <a href="https://www.berkshirehathaway.com/news/may0124.pdf"
-                >May 1, 2024</a
+                >April 1, 2024</a
               >
             </h3>
             <p>Annual Meeting and First Quarter Earnings Release Information</p>
@@ -211,7 +256,7 @@
           <article class="news-item">
             <h3>
               <a href="https://www.berkshirehathaway.com/news/feb2424.pdf"
-                >May 1, 2024</a
+                >June 13, 2024</a
               >
             </h3>
             <p>Fourth Quarter Earnings 2023</p>
@@ -219,7 +264,7 @@
           <article class="news-item">
             <h3>
               <a href="https://www.berkshirehathaway.com/news/feb2024.pdf"
-                >May 1, 2024</a
+                >April 14, 2024</a
               >
             </h3>
             <p>Annual Report Release Information</p>
@@ -238,7 +283,7 @@
           <article class="news-item">
             <h3>
               <a href="https://www.berkshirehathaway.com/news/feb2424.pdf"
-                >May 1, 2024</a
+                >May 14, 2024</a
               >
             </h3>
             <p>Berkshire Hathaway Reaches Settlement with Pilot Corporation</p>
@@ -246,6 +291,51 @@
           <!-- Add more news items here -->
         </section>
       </main>
+    </div>
+
+    <!-- ==========footer========= -->
+    <div class="footerdown">
+      <footer class="footer">
+        <div class="column">
+          <h3>About</h3>
+          <p>Leading by example</p>
+          <p>What we do</p>
+          <p>Careers</p>
+        </div>
+        <div class="column">
+          <h3>Values</h3>
+          <p>Social Impact</p>
+          <p>Inclusion</p>
+          <p>Diversity</p>
+        </div>
+        <div class="column">
+          <h3>News & Media</h3>
+          <p>NewsRoom</p>
+          <p>relations</p>
+        </div>
+        <div class="column">
+          <h3>Support</h3>
+          <p>Support Centre</p>
+          <p>Rules & Policies</p>
+          <p>Contact</p>
+        </div>
+        <div class="column">
+          <h3>Legal & Privacy</h3>
+          <p>Legal</p>
+          <p>Privacy Notice</p>
+          <p>Cookies</p>
+          <p>Anti-Sexual Harrasment</p>
+        </div>
+      </footer>
+
+      <footer class="footer1">
+        <div class="cpyname">
+          <div class="column111">
+            <h3 class="qwerty">All Rights Reserved 2024©</h3>
+            <h3 class="qwerty">Berkshire Hathway Inc.</h3>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="app.js"></script>

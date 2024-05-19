@@ -10,6 +10,45 @@ html {
   background-color: #000000;
 }
 
+/* ============navbar============ */
+.navbar {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.5);
+}
+
+.logos h2 {
+  font-size: 24px;
+  margin: 0;
+}
+.headeng {
+  font-family: "Orbitron", sans-serif;
+  color: #00c8ff;
+}
+
+.nav-linkss {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.nav-linkss li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  transition: color 0.3s;
+  background-color: #000000;
+}
+
+.nav-linkss li a:hover {
+  color: #52fff3;
+}
+
 .outer-container {
   width: 600px;
   height: 400px; /* Adjust height as needed */
@@ -86,7 +125,7 @@ html {
 }
 
 .headingtitle {
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 60px;
   color: #00c8ff;
 }
@@ -131,12 +170,13 @@ html {
   text-align: center;
   color: #ffffff;
   letter-spacing: 10px;
+  margin-bottom: 150px;
 }
 
 .movingicon {
   overflow: hidden;
   white-space: nowrap;
-  margin-top: 20px;
+  margin-top: 50px;
   width: 100%;
   height: 150px; /* Adjust height to match icon height */
   position: relative;
@@ -157,7 +197,7 @@ html {
   height: 100px; /* Adjust height to match icon height */
   position: absolute;
   animation: move 12s linear infinite;
-  border: 1px solid rgb(241, 235, 235);
+  /* border: 1px solid rgb(241, 235, 235); */
   border-radius: 5px;
 }
 
@@ -192,12 +232,21 @@ html {
 /* work */
 .work {
   height: 100vh;
-  /* background-color: aqua; */
+}
+
+.projectsummary a {
+  color: inherit; /* Inherit color from .projectsummary */
+  text-decoration: inherit; /* Inherit text-decoration from .projectsummary */
+}
+
+/* Reset default link styles */
+a {
+  text-decoration: none;
 }
 
 .outer1project {
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(138, 79, 79); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,7 +257,7 @@ html {
   display: grid;
   grid-auto-flow: column;
   overflow-x: auto;
-  background-color: #ffffff;
+  background-color: #000000;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
   scroll-padding-inline: 15px;
@@ -223,7 +272,7 @@ html {
 .projects {
   width: 400px;
   aspect-ratio: 9/13;
-  background-color: #ffffff;
+  background-color: #000000;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -285,7 +334,7 @@ html {
   width: 85%;
   margin-top: 16px;
   padding: 4px;
-  color: #000000;
+  color: #ffffff;
   font-family: "Outfit", Sans-serif;
   font-size: 20px;
   font-weight: 200;
@@ -303,8 +352,8 @@ html {
   font-size: 100px; /* Adjust as needed */
   text-align: center;
   margin-bottom: 50px;
-  font-family: "Cinzel", serif;
-  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  color: #00c8ff;
 }
 .button {
   display: inline-block;
@@ -325,6 +374,7 @@ html {
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  font-family: "Orbitron", sans-serif;
 }
 .button span:after {
   content: "➡";
@@ -350,9 +400,18 @@ html {
   width: 90%;
 }
 
+.downloadsectioning {
+  /* height: 100vh; */
+  background-color: #52fff3;
+}
+
 /* news */
+.topnews {
+  /* height: 100vh; */
+  background-color: #007bff;
+}
 header {
-  background-color: #f8f8f8;
+  background-color: #000000;
   padding: 10px 20px;
 }
 
@@ -377,9 +436,9 @@ nav li {
 nav a {
   text-decoration: none;
   padding: 10px;
-  background-color: #f1f1f1;
+  background-color: #000000;
   border-radius: 5px;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 #news-container {
@@ -387,12 +446,15 @@ nav a {
   overflow: hidden;
   position: relative;
   padding: 10px;
-  background-color: #fff;
+  background-color: #000000;
 }
 
 .news-item {
   padding: 10px;
   border-bottom: 1px solid #ccc;
+}
+.news-item a {
+  color: #00c8ff;
 }
 
 .news-item h3 {
@@ -401,24 +463,36 @@ nav a {
 
 .news-item p {
   margin: 5px 0 0 0;
+  color: #fff;
 }
 
 /* download section */
 
 #download-section {
-  max-width: 600px;
-  margin: 0 auto;
+  /* max-width: 600px; */
+  /* margin: 0 auto; */
+  margin-top: 40px;
   padding: 20px;
-  background-color: #fff;
+  background-color: #000000;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* margin-top: 20px auto; */
+  /* border: 2px solid red; */
+}
+
+.topheading {
+  font-family: "Orbitron", sans-serif;
+  padding: 5px;
+  margin: 5px;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
 }
 
 #download-section h2 {
   margin-top: 0;
   font-size: 24px;
   text-align: center;
-  color: #333;
+  color: #ffffff;
 }
 
 #document-list {
@@ -433,6 +507,10 @@ nav a {
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid #ccc;
+}
+
+#document-list {
+  color: #ffffff;
 }
 
 #document-list li:last-child {
@@ -451,4 +529,85 @@ nav a {
 
 .download-button:hover {
   background-color: #0056b3;
+}
+
+/* ===========footer class====== */
+
+.footerdown {
+  height: 100vh;
+  /* background-color: #e18d8d; */
+}
+
+.footer {
+  /* display: grid; */
+  /* grid-template-columns: repeat(5, 1fr); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 20px;
+  color: white;
+}
+
+.footer1 {
+  width: 80%;
+}
+
+.column {
+  padding: 10px;
+  border-right: 1px solid gray;
+  text-align: center;
+}
+
+.column h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: "Orbitron", sans-serif;
+
+  /* text-decoration: underline; */
+}
+
+.column p {
+  margin: 5px 0;
+  font-family: "Orbitron", sans-serif;
+}
+
+.column:last-child {
+  border-right: none;
+}
+
+.column111 {
+  text-align: center;
+  /* margin-left: 50%; */
+  font-family: "Orbitron", sans-serif;
+}
+
+.column p:hover {
+  color: #52fff3;
+}
+
+.footerdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Orbitron", sans-serif;
+}
+
+.cpyname {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+  font-family: "Orbitron", sans-serif;
+
+  /* background-color: #0056b3; */
+}
+
+.qwerty {
+  font-size: 10px;
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
 }
